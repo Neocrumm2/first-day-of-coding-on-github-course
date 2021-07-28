@@ -1,0 +1,16 @@
+title: First Day Of Coding On Github
+description: the basics of coding
+template:
+  repo: first-day-of-coding-on-github-template
+  name: first-day-of-coding-on-github
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
